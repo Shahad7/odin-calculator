@@ -1,0 +1,41 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    width:400px;
+    border: solid black 1px;
+}
+
+.display{
+    height:90px;
+    border: solid black 1px;
+    width:400px;
+}
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    height: 350px;
+
+}
+
+.operations{
+    display: flex;
+    flex-direction: column;
+    width:90px;
+   
+}
+.operands{
+    display: flex;
+    flex-direction: column;
+    width:280px;
+    
+}
+.row{
+    display: flex;
+    flex-grow: 1;
+}
+
+button{
+    flex-grow: 1;
+   
+}
