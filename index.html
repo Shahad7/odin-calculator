@@ -9,29 +9,33 @@
         <div class="header"><h1>Calculator</h1></div>
         <div class="container">
             <div class="display"></div>
+            <div class="options">
+                <button id="clear">CLEAR</button>
+                <button id="del">DELETE</button>
+            </div>
             <div class="buttons">
                 <div class="operands">
                 <div class="row">
-                <button id="7">7</button>
-                <button id="8">8</button>
-                <button id="9">9</button></div>
+                <button class="value" data-key="7" id="k7">7</button>
+                <button class="value" data-key="8" id="8">8</button>
+                <button class="value" data-key="9" id="9">9</button></div>
                 <div class="row">
-                <button id="4">4</button>
-                <button id="5">5</button>
-                <button id="6">6</button></div>
+                <button class="value" data-key="4" id="4">4</button>
+                <button class="value" data-key="5" id="5">5</button>
+                <button class="value" data-key="6" id="6">6</button></div>
                 <div class="row">
-                <button id="1">1</button>
-                <button id="2">2</button>
-                <button id="3">3</button></div>
+                <button class="value" data-key="1" id="1">1</button>
+                <button class="value" data-key="2" id="2">2</button>
+                <button class="value" data-key="3" id="3">3</button></div>
                 <div class="row">
-                <button id="0">0</button>
-                <button id=".">.</button>
-                <button id="=">=</button></div></div>
+                <button class="value" data-key="0" id="0">0</button>
+                <button class="value" data-key="." id=".">.</button>
+                <button data-key="=" id="equalTo">=</button></div></div>
                 <div class="operations">
-                <button class="op" id="/">/</button>
-                <button class="op" id="*">*</button>
-                <button class="op" id="-">-</button>
-                <button class="op" id="+">+</button></div>
+                <button class="op" data-key="/" id="/">/</button>
+                <button class="op" data-key="*" id="*">*</button>
+                <button class="op" data-key="-" id="-">-</button>
+                <button class="op" data-key="+" id="+">+</button></div>
             </div>
         </div>
     </body>

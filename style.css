@@ -2,26 +2,31 @@
     display: flex;
     flex-direction: column;
     height: 400px;
-    width:400px;
+    width:300px;
     border: solid black 1px;
 }
 
 .display{
     height:90px;
     border: solid black 1px;
-    width:400px;
+    width:300px;
+    display: flex;
+    flex-direction: row-reverse;
 }
 .buttons{
     display: flex;
-    justify-content: space-between;
+    
     height: 350px;
 
 }
-
+.options{
+    display: flex;
+    height:70px;
+}
 .operations{
     display: flex;
     flex-direction: column;
-    width:90px;
+    width:93px;
    
 }
 .operands{
