@@ -1,5 +1,5 @@
 let text,operand1,flag1=0,operand2,operation,flag2=0,flag3=0;
-const display = document.querySelector('.display');
+const display = document.querySelector('.displayContainer');
 let displayContent = document.createElement('span');
 display.appendChild(displayContent);
 displayContent.textContent = 0;
@@ -10,7 +10,7 @@ buttons.forEach((button)=>{
 button.addEventListener('click',()=>{
    if(displayContent.textContent==0)
       displayContent.textContent='';
-   if(displayContent.textContent.length>15)
+   if(displayContent.textContent.length>9)
       displayContent.textContent = Number(displayContent.textContent).toExponential();
    if(!flag3)
    {
@@ -94,3 +94,12 @@ clear.addEventListener('click',clearAll);
 
 const del = document.querySelector('#del');
 del.addEventListener('click',deleteIt);
+
+const buttonsToGlow = document.querySelectorAll('button');
+buttonsToGlow.forEach((button)=> {
+   button.addEventListener('click',glow);
+})
+
+function glow(){
+   
+}

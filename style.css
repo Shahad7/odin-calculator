@@ -1,46 +1,77 @@
 .container{
     display: flex;
     flex-direction: column;
-    height: 400px;
-    width:300px;
-    border: solid black 1px;
+    height: 420px;
+    width:310px;
+    border: solid black 2px;
+    background-color: black;
 }
-
 .display{
-    height:90px;
-    border: solid black 1px;
-    width:300px;
+    padding: 4px;
+}
+.displayContainer{
+    height:70px;
+    border:solid rgb(70,70,70) 2px;
+    background-color:rgb(25,25,25);
+    width:298px;
     display: flex;
+    font-size:xx-large;
+    align-items: center;
     flex-direction: row-reverse;
+    color:white;
 }
 .buttons{
     display: flex;
-    
+    gap:5px;
     height: 350px;
+    padding: 5px;
 
 }
 .options{
     display: flex;
     height:70px;
+    padding:5px;
+    gap:6px;
 }
 .operations{
     display: flex;
     flex-direction: column;
     width:93px;
+    gap:5px;
    
 }
 .operands{
     display: flex;
     flex-direction: column;
     width:280px;
+    gap:5px;
     
 }
 .row{
     display: flex;
     flex-grow: 1;
+    gap:5px;
 }
 
 button{
     flex-grow: 1;
-   
+    flex-basis: 0;
+}
+
+.buttons button{
+    color: white;
+    background-color:rgb(25,25,25);
+    border:solid rgb(70,70,70) 0.01px;
+    font-size: xx-large;
+}
+.options button{
+    background-color: rgb(0, 204, 255);
+    font-size: large;
+    border:none;
+}
+.operations button{
+    color:rgb(66, 230, 66);
+}
+#equalTo{
+    color:rgb(255, 145, 0);
 }
