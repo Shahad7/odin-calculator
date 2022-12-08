@@ -97,9 +97,23 @@ del.addEventListener('click',deleteIt);
 
 const buttonsToGlow = document.querySelectorAll('button');
 buttonsToGlow.forEach((button)=> {
-   button.addEventListener('click',glow);
+   button.addEventListener('click',()=>{glow(button)});
 })
 
-function glow(){
-   
+function glow(button){
+   if(button.getAttribute('id') =='clear'||button.getAttribute('id') =='del')
+      button.style.borderColor = 'rgb(66, 230, 66)';
+   else
+      button.style.borderColor = '#ffc600'
+   button.classList.add("pressed");
+   setTimeout(()=>{stopGlow(button)},180);
+}
+
+function stopGlow(button)
+{
+   if(button.getAttribute('id') =='clear'||button.getAttribute('id') =='del')
+      button.style.borderColor = 'rgb(90, 90, 250)';
+   else
+      button.style.borderColor = 'rgb(70,70,70)';
+      button.classList.remove("pressed");
 }
