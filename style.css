@@ -65,6 +65,7 @@ body{
 button{
     flex-grow: 1;
     flex-basis: 0;
+    transition: all 0.17s;
 }
 
 .buttons button{
@@ -87,4 +88,4 @@ button{
 }
 .pressed{
     transform: scale(1.04);
-  }
+}

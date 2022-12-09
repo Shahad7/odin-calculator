@@ -106,7 +106,7 @@ function glow(button){
    else
       button.style.borderColor = '#ffc600'
    button.classList.add("pressed");
-   setTimeout(()=>{stopGlow(button)},180);
+   button.addEventListener('transitionend',()=>{stopGlow(button)})
 }
 
 function stopGlow(button)
